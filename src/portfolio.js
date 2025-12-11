@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import { Fade } from "react-reveal";
 
 // Splash Screen
 
@@ -25,21 +26,23 @@ title: "Hello, I'm Sandeep",
 subTitle: emoji(
   "A passionate Java Full Stack Developer 🚀 with hands-on experience in building web applications using Java, Spring Boot, Angular, SQL, and REST APIs, along with strong fundamentals in backend and frontend development."
 ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+ resumeLink:
+  "https://drive.google.com/uc?export=download&id=1TgU-sVY1kqqrEDOCr1gLqpyPn_KJ1zhr",
+displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Social Media Links
+// Social Media Links  
 
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/sandeep-damor-01423328a",
   gmail: "sandeepdamor288@gmail.com",
-  gitlab: "https://github.com/Sandeepdamor",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  //gitlab: "https://github.com/Sandeepdamor",
+  instagram: "https://www.instagram.com/sandeep_damor17/",
+  facebook: "https://www.facebook.com/sandeep.damor.1848/",
+  twitter  : "https://twitter.com/sandeep_damor17",
+  //medium: "https://medium.com/@saadpasta",
+ // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -148,7 +151,7 @@ const educationInfo = {
     },
     {
       schoolName: "Government Higher Secondary School, Ranapur, District Jhabua (M.P.)",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/mp_board.png"),//src/assets/images/src/assets/images/mp_board.png
       subHeader: "Higher Secondary Education (10th & 12th)",
       duration: "Completed 10th & 12th with PCM",
       desc: "Completed higher secondary education with Physics, Chemistry, and Mathematics (PCM).",
@@ -234,25 +237,27 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),//src/assets/images/login-image.png
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/login-image.webp"),//src/assets/images/login-image.webp
+      projectName: "Rural Community Welfare System",
+      projectDesc:
+    "A full-stack web application designed to simplify service access in rural areas. It enables residents to submit grievances, book services, view announcements, and connect with local authorities. Built using Angular for the frontend and Spring Boot for the backend with secure JWT authentication.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          //url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"), //src/assets/images/logo.jpg
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "CICO – Check-In / Check-Out System",
+      projectDesc:
+      "A smart attendance and activity tracking system that allows users to check in and check out seamlessly. Features include real-time status updates, user authentication, time logs, and automated record generation. Designed with a clean UI and secure backend workflow.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+        //  url: "http://nextu.se/"
         }
       ]
     }
@@ -318,7 +323,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -330,18 +335,42 @@ const blogSection = {
   displayMediumBlogs: "false", // set true only if you have real Medium blogs
 
   blogs: [
-    {
-      url: "https://medium.com/", // replace with your real blog link
-      title: "Getting Started with Spring Boot REST APIs",
-      description:
-        "A beginner-friendly guide explaining how to build and test RESTful APIs using Spring Boot, Spring MVC, and MySQL."
-    },
-    {
-      url: "https://medium.com/", // replace with your real blog link
-      title: "JWT Authentication in Spring Security",
-      description:
-        "Step-by-step explanation of how JWT works, why it is stateless, and how to implement secure authentication in Spring Boot."
-    }
+ {
+  url: "https://www.baeldung.com/spring-boot-rest-api",
+  title: "Getting Started with Spring Boot REST APIs",
+  description:
+    "A complete guide to building and testing RESTful APIs using Spring Boot, controllers, services, and proper project structure."
+},
+{
+  url: "https://www.baeldung.com/spring-security-oauth-jwt",
+  title: "JWT Authentication in Spring Security",
+  description:
+    "Explains JWT structure, token validation, stateless authentication, and how to integrate JWT with Spring Security."
+},
+{
+  url: "https://www.digitalocean.com/community/tutorials/spring-microservices",
+  title: "Spring Boot Microservices for Beginners",
+  description:
+    "A step-by-step tutorial on designing, developing, and deploying microservices using Spring Boot and Spring Cloud."
+},
+{
+  url: "https://www.baeldung.com/spring-boot-performance",
+  title: "Optimizing Spring Boot Applications",
+  description:
+    "Covers performance tuning, caching, connection pools, memory optimization, and best practices for faster Spring Boot apps."
+},
+{
+  url: "https://medium.com/@sandeepdamor/building-a-secure-jwt-authentication-system-in-spring-boot-123456789",
+  title: "JWT Authentication – Complete Developer Guide",
+  description:
+    "Deep dive into how JWT works internally, why it's stateless, how signatures prevent tampering, and how to implement refresh tokens."
+},
+{
+  url: "https://blog.logrocket.com/deploying-full-stack-app-render",
+  title: "How to Deploy a Full-Stack App (Spring Boot + Angular) on Render",
+  description:
+    "Explains hosting backend and frontend on Render, environment variables, build commands, and pipeline automation."
+}
   ],
   display: true
 };
@@ -363,7 +392,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -400,7 +429,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
